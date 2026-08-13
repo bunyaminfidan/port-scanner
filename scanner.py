@@ -33,7 +33,7 @@ def scan_range_threaded(host, start_port, end_port, max_workers=100):
 
 
 if __name__ == "__main__":
-    target = "192.168.0.180"
+    target = "127.0.0.1"
     print(f"Scanning {target} from port 1 to 1024...")
     results = scan_range_threaded(target, 1, 8889)
     print(f"\nScan complete. Open ports: {results}")
